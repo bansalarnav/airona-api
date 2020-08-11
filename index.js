@@ -5,9 +5,9 @@ const mongoose = require('mongoose');
 
 
 
-mongoose.connect(process.env.MONGODB_URI)
-  .then(() => console.log('Connected to MongoDB.......'))
-  .catch(() => console.log(new Error('Could Not Connect to MongoDB-')));
+// mongoose.connect(process.env.MONGODB_URI)
+//   .then(() => console.log('Connected to MongoDB.......'))
+//   .catch(() => console.log(new Error('Could Not Connect to MongoDB-')));
 
 app.use(bodyParser.json());
 app.get('/', (req, res)=>{
