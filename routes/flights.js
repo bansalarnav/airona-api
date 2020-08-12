@@ -17,3 +17,5 @@ router.post('/:airline', (req, res) => {
     //push the given flight data to then end of the 
     // array in flights property of given airline
 });
+
+module.exports = router;
