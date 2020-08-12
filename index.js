@@ -5,9 +5,7 @@ const mongoose = require("mongoose");
 const flights = require("./routes/flights");
 
 mongoose
-  .connect(
-    "mongodb+srv://node_api:ar110507@cluster0.yctdv.mongodb.net/xino-hack?retryWrites=true&w=majority"
-  )
+  .connect(process.env.MONGODB_URI)
   .then(() => console.log("Connected to MongoDB......."))
   .catch(() => console.log(new Error("Could Not Connect to MongoDB-")));
 
